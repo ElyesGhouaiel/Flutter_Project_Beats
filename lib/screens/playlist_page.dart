@@ -93,7 +93,10 @@ class PlaylistPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Playlist'),
+        title: Text(
+          'Playlist',
+          style: TextStyle(fontFamily: 'FiraSans'), // Appliquer Fira Sans pour le titre
+        ),
       ),
       body: ListView.builder(
         itemCount: songs.length,
@@ -107,14 +110,18 @@ class PlaylistPage extends StatelessWidget {
             ),
             title: Text(
               songs[index]['title']!,
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: TextStyle(
+                fontFamily: 'FiraSans', // Appliquer Fira Sans pour le titre de la chanson
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             subtitle: Text(
               songs[index]['artist']!,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium!
-                  .copyWith(color: Color(0xFF806491)),
+              style: TextStyle(
+                fontFamily: 'Numans', // Appliquer Numans pour l'artiste
+                color: Color(0xFF806491),
+              ),
             ),
             onTap: () {
               Navigator.push(
