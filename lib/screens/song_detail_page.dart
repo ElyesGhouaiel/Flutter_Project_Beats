@@ -43,7 +43,7 @@ class SongDetailPage extends StatelessWidget {
               artist,
               style: TextStyle(
                 fontSize: 20,
-                color: Color(0xFF806491),
+                color: Colors.white,
               ),
             ),
             SizedBox(height: 20),

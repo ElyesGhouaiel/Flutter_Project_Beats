@@ -101,7 +101,7 @@ class PlaylistPage extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .bodyMedium!
-                  .copyWith(color: Color(0xFF806491)), // Utilisez bodyMedium
+                  .copyWith(color: Colors.white), // Appliquer couleur #806491,
             ),
             onTap: () {
               Navigator.push(

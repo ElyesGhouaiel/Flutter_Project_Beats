@@ -16,9 +16,10 @@ class MusicApp extends StatelessWidget {
         brightness: Brightness.dark, // Définit le thème général comme sombre
         primaryColor: Color(0xFF2F70AF),
         secondaryHeaderColor: Color(0xFFB9848C), // Remplace accentColor
-        scaffoldBackgroundColor: Colors.black, // Couleur de fond de l'écran
+        scaffoldBackgroundColor:
+            Color(0xFF2F70AF), // Couleur de fond de l'écran
         appBarTheme: AppBarTheme(
-          color: Color(0xFF2F70AF),
+          color: Color(0xFFB9848C), // Couleur de l'AppBar modifiée ici
           iconTheme: IconThemeData(color: Colors.white),
           titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
         ),
@@ -36,7 +37,7 @@ class MusicApp extends StatelessWidget {
           buttonColor: Color(0xFF2F70AF),
         ),
         colorScheme: ColorScheme(
-          brightness: Brightness.dark, // Ajoutez ce paramètre
+          brightness: Brightness.dark,
           primary: Color(0xFF2F70AF),
           onPrimary: Colors.white,
           secondary: Color(0xFFB9848C),

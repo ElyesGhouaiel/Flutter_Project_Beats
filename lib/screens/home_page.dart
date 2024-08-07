@@ -11,7 +11,16 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/logo.png', height: 100),
+            ClipRRect(
+              borderRadius:
+                  BorderRadius.circular(200), // Définir le rayon des coins
+              child: Image.asset(
+                'assets/BeatsLogo.jpeg',
+                height: 300,
+                fit: BoxFit
+                    .cover, // Ajuste l'image dans le cadre avec le bord arrondi
+              ),
+            ),
             SizedBox(height: 20),
             Text(
               'Welcome to Music App',
@@ -24,10 +33,14 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/playlist');
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF806491), // Couleur de fond du bouton
+              ),
               child: Text(
                 'Go to Playlist',
                 style: TextStyle(
-                    color: Colors.white), // Couleur du texte du bouton
+                  color: Colors.white, // Couleur du texte du bouton
+                ),
               ),
             ),
           ],
