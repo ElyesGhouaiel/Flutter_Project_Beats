@@ -24,7 +24,11 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/playlist');
               },
-              child: Text('Go to Playlist'),
+              child: Text(
+                'Go to Playlist',
+                style: TextStyle(
+                    color: Colors.white), // Couleur du texte du bouton
+              ),
             ),
           ],
         ),
