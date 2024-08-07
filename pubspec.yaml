@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_lints: ^3.0.0
+  google_fonts: ^3.0.1  # Assurez-vous d'utiliser une version compatible
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -58,10 +60,23 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+   # To add assets to your application, add an assets section, like this:
+  assets:
+      - assets/logo.png
+      - assets/blinding_lights.jpg
+      - assets/shape_of_you.jpg
+      - assets/uptown_funk.jpg
+      - assets/levitating.jpg
+      - assets/watermelon_sugar.jpg
+      - assets/bad_guy.jpg
+      - assets/old_town_road.jpg
+      - assets/dont_start_now.jpg
+      - assets/dance_monkey.jpg
+      - assets/rockstar.jpg
+      - assets/someone_you_loved.jpg
+      - assets/happier.jpg
+      - assets/sunflower.jpg
+      - assets/shallow.jpg # Assurez-vous d'ajouter un logo à ce chemin
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
