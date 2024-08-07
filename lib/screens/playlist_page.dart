@@ -124,7 +124,7 @@ class PlaylistPage extends StatelessWidget {
                     title: songs[index]['title']!,
                     artist: songs[index]['artist']!,
                     image: songs[index]['image']!,
-                    audioUrl: songs[index]['audio']!,
+                    //audioUrl: songs[index]['audio']!,
                   ),
                 ),
               );

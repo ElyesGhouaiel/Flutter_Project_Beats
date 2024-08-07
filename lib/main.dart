@@ -60,7 +60,7 @@ class MusicApp extends StatelessWidget {
             title: args['title']!,
             artist: args['artist']!,
             image: args['image']!,
-            audioUrl: args['audioUrl']!,
+            //audioUrl: args['audioUrl']!,
           );
         },
       },

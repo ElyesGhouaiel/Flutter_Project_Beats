@@ -33,12 +33,12 @@ dependencies:
   flutter_lints: ^3.0.0
   google_fonts: ^3.0.1  # Assurez-vous d'utiliser une version compatible
   just_audio: ^0.9.27  # Assurez-vous de vérifier la dernière version sur pub.dev
+  #audioplayers: ^0.20.1
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
-  audioplayers: ^0.20.1
 
 dev_dependencies:
   flutter_test:
