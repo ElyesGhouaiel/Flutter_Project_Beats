@@ -6,72 +6,86 @@ class PlaylistPage extends StatelessWidget {
     {
       "title": "Blinding Lights",
       "artist": "The Weeknd",
-      "image": "assets/blinding_lights.jpg"
+      "image": "assets/blinding_lights.jpg",
+      "audio": "assets/audio/blinding_lights.mp3",
     },
     {
       "title": "Shape of You",
       "artist": "Ed Sheeran",
-      "image": "assets/shape_of_you.jpg"
+      "image": "assets/shape_of_you.jpg",
+      "audio": "assets/shape_of_you.mp3",
     },
     {
       "title": "Uptown Funk",
       "artist": "Mark Ronson ft. Bruno Mars",
-      "image": "assets/uptown_funk.jpg"
+      "image": "assets/uptown_funk.jpg",
+      "audio": "assets/uptown_funk.mp3",
     },
     {
       "title": "Levitating",
       "artist": "Dua Lipa",
-      "image": "assets/levitating.jpg"
+      "image": "assets/levitating.jpg",
+      "audio": "assets/levitating.mp3",
     },
     {
       "title": "Watermelon Sugar",
       "artist": "Harry Styles",
-      "image": "assets/watermelon_sugar.jpg"
+      "image": "assets/watermelon_sugar.jpg",
+      "audio": "assets/watermelon_sugar.mp3",
     },
     {
       "title": "Bad Guy",
       "artist": "Billie Eilish",
-      "image": "assets/bad_guy.jpg"
+      "image": "assets/bad_guy.jpg",
+      "audio": "assets/bad_guy.mp3",
     },
     {
       "title": "Old Town Road",
       "artist": "Lil Nas X",
-      "image": "assets/old_town_road.jpg"
+      "image": "assets/old_town_road.jpg",
+      "audio": "assets/old_town_road.mp3",
     },
     {
       "title": "Don’t Start Now",
       "artist": "Dua Lipa",
-      "image": "assets/dont_start_now.jpg"
+      "image": "assets/dont_start_now.jpg",
+      "audio": "assets/dont_start_now.mp3",
     },
     {
       "title": "Dance Monkey",
       "artist": "Tones and I",
-      "image": "assets/dance_monkey.jpg"
+      "image": "assets/dance_monkey.jpg",
+      "audio": "assets/dance_monkey.mp3",
     },
     {
       "title": "Rockstar",
       "artist": "DaBaby ft. Roddy Ricch",
-      "image": "assets/rockstar.jpg"
+      "image": "assets/rockstar.jpg",
+      "audio": "assets/rockstar.mp3",
     },
     {
       "title": "Someone You Loved",
       "artist": "Lewis Capaldi",
-      "image": "assets/someone_you_loved.jpg"
+      "image": "assets/someone_you_loved.jpg",
+      "audio": "assets/someone_you_loved.mp3",
     },
     {
       "title": "Happier",
       "artist": "Marshmello ft. Bastille",
-      "image": "assets/happier.jpg"
+      "image": "assets/happier.jpg",
+      "audio": "assets/happier.mp3",
     },
     {
       "title": "Sunflower",
       "artist": "Post Malone & Swae Lee",
-      "image": "assets/sunflower.jpg"
+      "image": "assets/sunflower.jpg",
+      "audio": "assets/sunflower.mp3",
     },
     {
       "title": "Shallow",
       "artist": "Lady Gaga & Bradley Cooper",
-      "image": "assets/shallow.jpg"
+      "image": "assets/shallow.jpg",
+      "audio": "assets/shallow.mp3",
     },
   ];
 
@@ -93,15 +107,14 @@ class PlaylistPage extends StatelessWidget {
             ),
             title: Text(
               songs[index]['title']!,
-              style:
-                  Theme.of(context).textTheme.bodyLarge, // Utilisez bodyLarge
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
             subtitle: Text(
               songs[index]['artist']!,
               style: Theme.of(context)
                   .textTheme
                   .bodyMedium!
-                  .copyWith(color: Colors.white), // Appliquer couleur #806491,
+                  .copyWith(color: Color(0xFF806491)),
             ),
             onTap: () {
               Navigator.push(
@@ -111,6 +124,7 @@ class PlaylistPage extends StatelessWidget {
                     title: songs[index]['title']!,
                     artist: songs[index]['artist']!,
                     image: songs[index]['image']!,
+                    audioUrl: songs[index]['audio']!,
                   ),
                 ),
               );

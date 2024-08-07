@@ -53,11 +53,16 @@ class MusicApp extends StatelessWidget {
       home: HomePage(),
       routes: {
         '/playlist': (context) => PlaylistPage(),
-        '/songDetail': (context) => SongDetailPage(
-              title: '',
-              artist: '',
-              image: '',
-            ),
+        '/songDetail': (context) {
+          final args =
+              ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+          return SongDetailPage(
+            title: args['title']!,
+            artist: args['artist']!,
+            image: args['image']!,
+            audioUrl: args['audioUrl']!,
+          );
+        },
       },
     );
   }
