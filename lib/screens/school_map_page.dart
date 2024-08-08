@@ -3,6 +3,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:app_flutter_project_beats/screens/school_model.dart';
 
+//Killian
 class SchoolMapPage extends StatelessWidget {
   final School school;
 

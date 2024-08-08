@@ -4,6 +4,7 @@ import 'screens/playlist_page.dart';
 import 'screens/song_detail_page.dart';
 import 'screens/ecole_page.dart'; // Importez le nouvel écran
 
+//cette partie à été fait par Elyes et Killian
 void main() {
   runApp(MusicApp());
 }

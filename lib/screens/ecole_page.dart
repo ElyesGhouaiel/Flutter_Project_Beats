@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 import 'package:app_flutter_project_beats/screens/school_model.dart';
 import 'package:app_flutter_project_beats/screens/school_map_page.dart';
 
+//Killian
+
 class EcolePage extends StatefulWidget {
   @override
   _EcolePageState createState() => _EcolePageState();
