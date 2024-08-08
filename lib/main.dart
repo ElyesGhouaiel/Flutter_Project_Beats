@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 import 'screens/playlist_page.dart';
 import 'screens/song_detail_page.dart';
+import 'screens/ecole_page.dart'; // Importez le nouvel écran
 
 void main() {
   runApp(MusicApp());
@@ -13,33 +14,19 @@ class MusicApp extends StatelessWidget {
     return MaterialApp(
       title: 'Music App',
       theme: ThemeData(
-        brightness: Brightness.dark, // Définit le thème général comme sombre
+        brightness: Brightness.dark,
         primaryColor: Color(0xFF2F70AF),
-        secondaryHeaderColor: Color(0xFFB9848C), // Remplace accentColor
-        scaffoldBackgroundColor: Color(0xFF2F70AF), // Couleur de fond de l'écran
+        secondaryHeaderColor: Color(0xFFB9848C),
+        scaffoldBackgroundColor: Color(0xFF2F70AF),
         appBarTheme: AppBarTheme(
-          color: Color(0xFFB9848C), // Couleur de l'AppBar modifiée ici
+          color: Color(0xFFB9848C),
           iconTheme: IconThemeData(color: Colors.white),
-          titleTextStyle: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontFamily: 'FiraSans', // Appliquer Fira Sans pour le titre
-          ),
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
         ),
         textTheme: TextTheme(
-          headlineMedium: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontFamily: 'FiraSans', // Appliquer Fira Sans pour les titres
-          ),
-          bodyLarge: TextStyle(
-            color: Colors.white,
-            fontFamily: 'Numans', // Appliquer Numans pour les textes
-          ),
-          bodyMedium: TextStyle(
-            color: Colors.grey,
-            fontFamily: 'Numans', // Appliquer Numans pour les textes
-          ),
+          headlineMedium: TextStyle(color: Colors.white, fontSize: 20),
+          bodyLarge: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Colors.grey),
         ),
         listTileTheme: ListTileThemeData(
           contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
@@ -67,14 +54,16 @@ class MusicApp extends StatelessWidget {
       routes: {
         '/playlist': (context) => PlaylistPage(),
         '/songDetail': (context) {
-          final args = ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+          final args =
+              ModalRoute.of(context)!.settings.arguments as Map<String, String>;
           return SongDetailPage(
             title: args['title']!,
             artist: args['artist']!,
             image: args['image']!,
-            //audioUrl: args['audioUrl']!,
+            audioUrl: args['audioUrl']!, // Passez l'URL de l'audio
           );
         },
+        '/ecole': (context) => EcolePage(),
       },
     );
   }

@@ -32,13 +32,16 @@ dependencies:
     sdk: flutter
   flutter_lints: ^3.0.0
   google_fonts: ^3.0.1  # Assurez-vous d'utiliser une version compatible
-  just_audio: ^0.9.27  # Assurez-vous de vérifier la dernière version sur pub.dev
+  just_audio: ^0.9.39  # Assurez-vous de vérifier la dernière version sur pub.dev
   #audioplayers: ^0.20.1
-
+  http: ^0.13.0  # Ou la dernière version disponible
+  flutter_map: ^4.0.0
+  latlong2: ^0.8.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  just_audio_background: ^0.0.1-beta.13
 
 dev_dependencies:
   flutter_test:
@@ -67,19 +70,34 @@ flutter:
       - assets/BeatsLogo.jpeg
       - assets/audio/blinding_lights.mp3
       - assets/blinding_lights.jpg
+      - assets/audio/blinding_lights.mp3
+
       - assets/shape_of_you.jpg
+      - assets/audio/shape_of_you.mp3
       - assets/uptown_funk.jpg
+      - assets/audio/uptown_funk.mp3
       - assets/levitating.jpg
+      - assets/audio/levitating.mp3
       - assets/watermelon_sugar.jpg
+      - assets/audio/watermelon_sugar.mp3
       - assets/bad_guy.jpg
+      - assets/audio/bad_guy.mp3
       - assets/old_town_road.jpg
+      - assets/audio/old_town_road.mp3
       - assets/dont_start_now.jpg
+      - assets/audio/dont_start_now.mp3
       - assets/dance_monkey.jpg
+      - assets/audio/dance_monkey.mp3
       - assets/rockstar.jpg
+      - assets/audio/rockstar.mp3
       - assets/someone_you_loved.jpg
+      - assets/audio/someone_you_loved.mp3
       - assets/happier.jpg
+      - assets/audio/happier.mp3
       - assets/sunflower.jpg
+      - assets/audio/sunflower.mp3
       - assets/shallow.jpg # Assurez-vous d'ajouter un logo à ce chemin
+      - assets/audio/shallow.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

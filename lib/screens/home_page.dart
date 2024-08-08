@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Home',
-          style: TextStyle(fontFamily: 'FiraSans'), // Appliquer Fira Sans pour le titre
+          style: TextStyle(fontFamily: 'FiraSans'),
         ),
       ),
       body: Center(
@@ -15,20 +15,20 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ClipRRect(
-              borderRadius: BorderRadius.circular(200), // Définir le rayon des coins
+              borderRadius: BorderRadius.circular(200),
               child: Image.asset(
                 'assets/BeatsLogo.jpeg',
                 height: 300,
-                fit: BoxFit.cover, // Ajuste l'image dans le cadre avec le bord arrondi
+                fit: BoxFit.cover,
               ),
             ),
             SizedBox(height: 20),
             Text(
               'Welcome to Music App',
               style: TextStyle(
-                fontFamily: 'FiraSans', // Appliquer Fira Sans pour le texte
-                fontSize: 24, // Taille de police
-                fontWeight: FontWeight.bold, // Poids de police
+                fontFamily: 'FiraSans',
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(height: 20),
@@ -37,13 +37,31 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, '/playlist');
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF806491), // Couleur de fond du bouton
+                backgroundColor: Color(0xFF806491),
               ),
               child: Text(
                 'Go to Playlist',
                 style: TextStyle(
-                  fontFamily: 'Numans', // Appliquer Numans pour le texte du bouton
-                  color: Colors.white, // Couleur du texte du bouton
+                  fontFamily: 'Numans',
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/ecole');
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF806491),
+              ),
+              child: Text(
+                'Chercher une école de musique',
+                style: TextStyle(
+                  fontFamily: 'Numans',
+                  color: Colors.white,
                 ),
               ),
             ),
